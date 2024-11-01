@@ -20,8 +20,8 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
 version = '0.5-1.18.2'
-group = 'com.coqire.bageksfences' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'bageksfences'
+group = 'com.coqire.bageksdeco' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'bageksdeco'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -64,10 +64,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'bageksfences'
+            property 'forge.enabledGameTestNamespaces', 'bageksdeco'
 
             mods {
-                bageksfences {
+                bageksdeco {
                     source sourceSets.main
                 }
             }
@@ -81,10 +81,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'bageksfences'
+            property 'forge.enabledGameTestNamespaces', 'bageksdeco'
 
             mods {
-                bageksfences {
+                bageksdeco {
                     source sourceSets.main
                 }
             }
@@ -109,10 +109,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'bageksfences'
+            property 'forge.enabledGameTestNamespaces', 'bageksdeco'
 
             mods {
-                bageksfences {
+                bageksdeco {
                     source sourceSets.main
                 }
             }
@@ -125,11 +125,11 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            // Specify the bageksfences for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'bageksfences', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            // Specify the bageksdeco for data generation, where to output the resulting resource, and where to look for existing resources.
+            args '--mod', 'bageksdeco', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                bageksfences {
+                bageksdeco {
                     source sourceSets.main
                 }
             }
@@ -179,12 +179,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "bageksfences",
-                "Specification-Vendor"    : "bageksfencessareus",
+                "Specification-Title"     : "bageksdeco",
+                "Specification-Vendor"    : "bageksdecosareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "bageksfencessareus",
+                "Implementation-Vendor"   : "bageksdecosareus",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
