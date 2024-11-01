@@ -1,8 +1,10 @@
 package com.coqire.bageksdeco;
 
+import com.coqire.bageksdeco.block.ModBlocks;
 import com.coqire.bageksdeco.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +22,7 @@ public class bageksdeco {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
@@ -27,7 +30,16 @@ public class bageksdeco {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_1.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_2.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_3.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_4.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_5.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_6.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_7.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_8.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_9.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROSSBUCK_10.get(), RenderType.solid());
     }
 }
