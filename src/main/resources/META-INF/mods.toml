@@ -5,26 +5,26 @@ loaderVersion="[40,)"
 license="All rights reserved" # SWEM is All rights reserved and due to this mod being heavily tied to their code, this mod is also listed as All Rights reservered
 [[mods]]
 
-modId="bageksjumps"
+modId="bageksdeco"
 version="${file.jarVersion}"
-displayName="Bagek's Fences & Jumps"
+displayName="Bagek's Decoration"
 
 logoFile="logo.png"
 
-credits="Credits to Bagek and Sorreine"
+credits="Credits to Bagek and Andreja"
 authors="Coqire"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Bagek's Fences & Jumps is a mod that brings more "realistic" type of fences and jumps to minecraft. These fences/jumps have been sized to fit the SWEM horses. But anyone is welcome to use them!
+Bagek's Deocration is a mod that brings more "realistic" types of equestrian decoration to minecraft. These decorations have been sized to fit the SWEM horses. But anyone is welcome to use them!
 
-This mod will be created for 1.18.2 and 1.20.1. There are no plans to bring it to 1.16.5.
+This mod will be created for 1.18.2 and 1.20.1 There are no plans to bring it to 1.16.5.
 
 Bagek's Official discord : https://discord.gg/ghkKE6WcqE
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.bageksjumps]] #optional
+[[dependencies.bageksdeco]] #optional
 # the modid of the dependency
 modId="forge" #mandatory
 # Does this dependency have to exist - if not, ordering below must be specified
@@ -36,7 +36,7 @@ ordering="NONE"
 # Side this dependency is applied on - BOTH, CLIENT or SERVER
 side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.bageksdeco]]
 modId="minecraft"
 mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
