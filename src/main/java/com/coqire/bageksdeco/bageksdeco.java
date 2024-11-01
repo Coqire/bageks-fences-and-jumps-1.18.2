@@ -1,6 +1,6 @@
-package com.coqire.bageksfences;
+package com.coqire.bageksdeco;
 
-import com.coqire.bageksfences.item.ModItems;
+import com.coqire.bageksdeco.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -11,12 +11,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 
-@Mod(bageksfences.Mod_ID)
-public class bageksfences {
-    public static final String Mod_ID = "bageksfences";
+@Mod(bageksdeco.Mod_ID)
+public class bageksdeco {
+    public static final String Mod_ID = "bageksdeco";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public bageksfences() {
+    public bageksdeco() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);

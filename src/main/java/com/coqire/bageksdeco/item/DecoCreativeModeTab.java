@@ -1,11 +1,11 @@
-package com.coqire.bageksfences.item;
+package com.coqire.bageksdeco.item;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
-public class FencesCreativeModeTab {
-    public static final CreativeModeTab FENCESNJUMPS_TAB = new CreativeModeTab("fencesnjumpstab") {
+public class DecoCreativeModeTab {
+    public static final CreativeModeTab BAGEKSDECO_TAB = new CreativeModeTab("bageksdecotab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.FENCELOGO.get());
