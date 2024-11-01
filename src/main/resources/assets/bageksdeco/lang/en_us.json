@@ -1,5 +1,16 @@
 {
   "item.bageksdeco.fencelogo": "Firework Logo",
 
-  "itemgroup.bageksdecotab": "Bagek's Decoration"
+  "block.bageksdeco.crossbuck_1": "Oak Crossbuck Fence",
+  "block.bageksdeco.crossbuck_2": "Spruce Crossbuck Fence",
+  "block.bageksdeco.crossbuck_3": "Birch Crossbuck Fence",
+  "block.bageksdeco.crossbuck_4": "Dark Oak Crossbuck Fence",
+  "block.bageksdeco.crossbuck_5": "Acacia Crossbuck Fence",
+  "block.bageksdeco.crossbuck_6": "Jungle Crossbuck Fence",
+  "block.bageksdeco.crossbuck_7": "Cherry Crossbuck Fence",
+  "block.bageksdeco.crossbuck_8": "Mangrove Crossbuck Fence",
+  "block.bageksdeco.crossbuck_9": "Crimson Crossbuck Fence",
+  "block.bageksdeco.crossbuck_10": "Warped Crossbuck Fence",
+
+  "itemGroup.bageksdecotab": "Bagek's Decoration"
 }
